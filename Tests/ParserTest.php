@@ -10,7 +10,7 @@
  * @package ChillDev\Spintax
  */
 
-namespace ChillDev\Spintax\Tests\Validator;
+namespace ChillDev\Spintax\Tests;
 
 use PHPUnit_Framework_TestCase;
 
@@ -36,13 +36,7 @@ class ParserTest extends PHPUnit_Framework_TestCase
         $spintax = Parser::parse($source);
 
         $this->assertInstanceOf('ChillDev\\Spintax\\Content', $spintax, 'Parser::parse() should return instance of ChillDev\\Spintax\\Content.');
-        $this->assertCount(7, \count($spintax));
-
-        $this->assertContains(
-            $spintax->generate(),
-            ['I love PHP.', 'I love Java.', 'I love C.', 'I love C++.', 'I love JavaScript.', 'I love Python.', 'I hate Ruby.'],
-            'Parser::parse() should generate spintax node that contains only options from source text.'
-        );
+        $this->assertEquals($source, (string) $spintax, 'Parser::parse() should map the spintax source as 1-to-1 logical tree.');
     }
 
     /**
