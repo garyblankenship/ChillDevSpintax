@@ -23,4 +23,4 @@
 -   [Travis CI](https://travis-ci.org/chilloutdevelopment/ChillDevSpintax)
 -   [Scrutinizer CI](https://scrutinizer-ci.com/g/chilloutdevelopment/ChillDevSpintax/)
 -   [Coverage tracking](https://coveralls.io/r/chilloutdevelopment/ChillDevSpintax)
--   [Dependencies tracking](https://www.versioneye.com/user/projects/52e15a98ec137583360000bb)
+-   [Dependencies tracking](https://www.versioneye.com/user/projects/52e1a8a1ec13751a000001a5)

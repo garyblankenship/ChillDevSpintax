@@ -15,7 +15,7 @@
 [![Build Status](https://travis-ci.org/chilloutdevelopment/ChillDevSpintax.png)](https://travis-ci.org/chilloutdevelopment/ChillDevSpintax)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/chilloutdevelopment/ChillDevSpintax/badges/quality-score.png?s=2db247278a9b22e9d22e14f94a5d5fc4dc826f00)](https://scrutinizer-ci.com/g/chilloutdevelopment/ChillDevSpintax/)
 [![Coverage Status](https://coveralls.io/repos/chilloutdevelopment/ChillDevSpintax/badge.png?branch=develop)](https://coveralls.io/r/chilloutdevelopment/ChillDevSpintax)
-[![Dependency Status](https://www.versioneye.com/user/projects/52e15a98ec137583360000bb/badge.png)](https://www.versioneye.com/user/projects/52e15a98ec137583360000bb)
+[![Dependency Status](https://www.versioneye.com/user/projects/52e1a8a1ec13751a000001a5/badge.png)](https://www.versioneye.com/user/projects/52e1a8a1ec13751a000001a5)
 
 # Installation
 
