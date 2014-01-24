@@ -37,59 +37,40 @@ class Parser
 
         // initialize parser nodes
         $current = $root;
-        $parent = null;
+        $parent = $root;
         $parents = [];
         $tokens = '{}|';
-        // this is for simplicity, as default flow is the same like this
-        $previous = '}';
 
         // loop through the string looking for spintax tokens
         $part = strpbrk($string, $tokens);
         while (false !== $part) {
             $token = $part[0];
-            $content = substr($string, 0, -strlen($part));
+            $current->setContent(substr($string, 0, -strlen($part)));
             $string = substr($part, 1);
 
             switch ($token) {
                 // start of new choice
                 case '{':
-                    // first save plaintext content
-                    if ($previous == '|') {
-                        $current = new Content($content);
-                        $parent->addChild($current);
-                    } elseif (!empty($content)) {
-                        $current->setContent($content);
-                    }
-
                     // stack parent
-                    $parents[] = $parent = $current;
+                    $parents[] = $parent;
+                    $parent = $current;
+                // next option
+                case '|':
+                    // create child node
+                    $current = new Content();
+                    $parent->addChild($current);
                     break;
 
                 // end of subset
                 case '}':
-                    if ($previous == '|') {
-                        $parent->addChild(new Content($content));
-                    } else {
-                        $current->setNext(new Content($content));
-                    }
+                    // move forward
+                    $current = new Content();
+                    $parent->setNext($current);
 
                     // un-stack parent
-                    $parent = $current = array_pop($parents);
-
-                    // move forward
-                    $node = new Content();
-                    $current->setNext($node);
-                    $current = $node;
-                    break;
-
-                // next option
-                case '|':
-                    $current = new Content($content);
-
-                    $parent->addChild($current);
+                    $parent = array_pop($parents);
                     break;
             }
-            $previous = $token;
 
             $part = strpbrk($string, $tokens);
         }

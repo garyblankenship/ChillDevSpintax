@@ -27,16 +27,31 @@ class ParserTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @test
+     * @param string $source
      * @version 0.0.1
      * @since 0.0.1
+     * @dataProvider parseDataProvider
      */
-    public function parse()
+    public function parse($source)
     {
-        $source = 'I {love {PHP|Java|C|C++|JavaScript|Python}|hate Ruby}.';
         $spintax = Parser::parse($source);
 
         $this->assertInstanceOf('ChillDev\\Spintax\\Content', $spintax, 'Parser::parse() should return instance of ChillDev\\Spintax\\Content.');
         $this->assertEquals($source, (string) $spintax, 'Parser::parse() should map the spintax source as 1-to-1 logical tree.');
+    }
+
+    /**
+     * @return array
+     * @version 0.0.1
+     * @since 0.0.1
+     */
+    public function parseDataProvider()
+    {
+        return [
+            ['I {love {PHP|Java|C|C++|JavaScript|Python}|{hate|can\'t stand} Ruby}.'],
+            ['I {love|hate} {PHP|Java|C|C++|JavaScript|Python}.'],
+            ['{a|b{c|d|e}{f|g}}{h|i|{j|k}|{l|m|n}}'],
+        ];
     }
 
     /**
