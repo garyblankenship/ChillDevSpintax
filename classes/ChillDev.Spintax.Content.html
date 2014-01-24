@@ -1,0 +1,417 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>ChillDev Spintax library - by Chillout Development » \ChillDev\Spintax\Content</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div id="ribbon"><a href="https://github.com/chilloutdevelopment/ChillDevSpintax" rel="me">Fork me on GitHub</a></div>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">ChillDev Spintax library - by Chillout Development</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/ChillDev.html"><i class="icon-th"></i> ChillDev</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/ChillDev.html"><i class="icon-folder-open"></i> ChillDev</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">2</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct :: Builds node representaiton for given string vlaue."><span class="description">Builds node representaiton for given string vlaue.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___toString" title="__toString :: Returns plain representation."><span class="description">Returns plain representation.</span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#method_addChild" title="addChild :: Adds child node."><span class="description">Adds child node.</span><pre>addChild()</pre></a></li>
+<li class="method public "><a href="#method_count" title="count :: Returns number of possible combinations."><span class="description">Returns number of possible combinations.</span><pre>count()</pre></a></li>
+<li class="method public "><a href="#method_dump" title="dump :: Dumps source spintax format."><span class="description">Dumps source spintax format.</span><pre>dump()</pre></a></li>
+<li class="method public "><a href="#method_generate" title="generate :: Generates plain content (optionally based on pre-defined path)."><span class="description">Generates plain content (optionally based on pre-defined path).</span><pre>generate()</pre></a></li>
+<li class="method public "><a href="#method_getPaths" title="getPaths :: Returns list of all possible paths."><span class="description">Returns list of all possible paths.</span><pre>getPaths()</pre></a></li>
+<li class="method public "><a href="#method_setContent" title="setContent :: Sets content value."><span class="description">Sets content value.</span><pre>setContent()</pre></a></li>
+<li class="method public "><a href="#method_setNext" title="setNext :: Sets next node."><span class="description">Sets next node.</span><pre>setNext()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property_children" title="$children :: Possible sub-contents."><span class="description"></span><pre>$children</pre></a></li>
+<li class="property protected "><a href="#property_content" title="$content :: Node raw value."><span class="description"></span><pre>$content</pre></a></li>
+<li class="property protected "><a href="#property_next" title="$next :: Next node value."><span class="description"></span><pre>$next</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a id="\ChillDev\Spintax\Content"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/ChillDev.html">ChillDev</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/ChillDev.Spintax.html">Spintax</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ChillDev.Spintax.Content.html">Content</a>
+</li>
+</ul>
+<div class="element class">
+<p class="short_description">Spintax tree node.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>author</th>
+<td><a href="mailto:rafal.wrzeszcz@wrzasq.pl">Rafał Wrzeszcz</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>2014 © by Rafał Wrzeszcz - Wrzasq.pl.</td>
+</tr>
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/ChillDev.Spintax.html">ChillDev\Spintax</a></td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+<h2>Builds node representaiton for given string vlaue.</h2>
+<pre>__construct(string $content) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$content</h4>
+<code>string</code><p>Text content.</p></div>
+</div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString" data-toggle="collapse" data-target=".method___toString .collapse">
+<h2>Returns plain representation.</h2>
+<pre>__toString() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Merged content.</div>
+</div></div>
+</div>
+<a id="method_addChild"></a><div class="element clickable method public method_addChild" data-toggle="collapse" data-target=".method_addChild .collapse">
+<h2>Adds child node.</h2>
+<pre>addChild(\ChillDev\Spintax\Content $child) : <a href="../classes/ChillDev.Spintax.Content.html">\ChillDev\Spintax\Content</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$child</h4>
+<code>self</code><p>Sub-content.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ChillDev.Spintax.Content.html">\ChillDev\Spintax\Content</a></code>Self instance.</div>
+</div></div>
+</div>
+<a id="method_count"></a><div class="element clickable method public method_count" data-toggle="collapse" data-target=".method_count .collapse">
+<h2>Returns number of possible combinations.</h2>
+<pre>count() : int</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code>Number of possible combinations.</div>
+</div></div>
+</div>
+<a id="method_dump"></a><div class="element clickable method public method_dump" data-toggle="collapse" data-target=".method_dump .collapse">
+<h2>Dumps source spintax format.</h2>
+<pre>dump() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Merged content.</div>
+</div></div>
+</div>
+<a id="method_generate"></a><div class="element clickable method public method_generate" data-toggle="collapse" data-target=".method_generate .collapse">
+<h2>Generates plain content (optionally based on pre-defined path).</h2>
+<pre>generate(array $path, int $index) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>int[]</code><p>&$path Path to use for the content.</p>
+</div>
+<div class="subelement argument">
+<h4>$index</h4>
+<code>int</code><p>&$index Internal pointer for path array.</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Generated content.</div>
+</div></div>
+</div>
+<a id="method_getPaths"></a><div class="element clickable method public method_getPaths" data-toggle="collapse" data-target=".method_getPaths .collapse">
+<h2>Returns list of all possible paths.</h2>
+<pre>getPaths() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>List of all possible paths.</div>
+</div></div>
+</div>
+<a id="method_setContent"></a><div class="element clickable method public method_setContent" data-toggle="collapse" data-target=".method_setContent .collapse">
+<h2>Sets content value.</h2>
+<pre>setContent(string $content) : <a href="../classes/ChillDev.Spintax.Content.html">\ChillDev\Spintax\Content</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$content</h4>
+<code>string</code><p>Text content.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ChillDev.Spintax.Content.html">\ChillDev\Spintax\Content</a></code>Self instance.</div>
+</div></div>
+</div>
+<a id="method_setNext"></a><div class="element clickable method public method_setNext" data-toggle="collapse" data-target=".method_setNext .collapse">
+<h2>Sets next node.</h2>
+<pre>setNext(\ChillDev\Spintax\Content $next) : <a href="../classes/ChillDev.Spintax.Content.html">\ChillDev\Spintax\Content</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>fluent</th>
+<td>This method is part of a fluent interface and will return the same instance</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$next</h4>
+<code>self</code><p>Next node.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/ChillDev.Spintax.Content.html">\ChillDev\Spintax\Content</a></code>Self instance.</div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_children"> </a><div class="element clickable property protected property_children" data-toggle="collapse" data-target=".property_children .collapse">
+<h2></h2>
+<pre>$children : self[]</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_content"> </a><div class="element clickable property protected property_content" data-toggle="collapse" data-target=".property_content .collapse">
+<h2></h2>
+<pre>$content : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_next"> </a><div class="element clickable property protected property_next" data-toggle="collapse" data-target=".property_next .collapse">
+<h2></h2>
+<pre>$next : self</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>version</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a12</a> and<br>
+            generated on 2014-01-24T20:04:34+01:00.<br></footer></div>
+</div>
+</body>
+</html>

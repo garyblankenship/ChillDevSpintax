@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a12" title="ChillDev Spintax library - by Chillout Development">
+  <file path="Parser.php" hash="58e219bd800699fdb75ac79079b49449" package="ChillDev\Spintax">
+    <docblock line="3">
+      <description>This file is part of the ChillDev Spintax library.</description>
+      <long-description></long-description>
+      <tag line="3" name="author" description="Rafał Wrzeszcz &lt;rafal.wrzeszcz@wrzasq.pl&gt;"/>
+      <tag line="3" name="copyright" description="2014 © by Rafał Wrzeszcz - Wrzasq.pl."/>
+      <tag line="3" name="version" description="0.0.1"/>
+      <tag line="3" name="since" description="0.0.1"/>
+      <tag line="3" name="package" description="ChillDev\Spintax"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="ChillDev\Spintax" line="24" package="ChillDev\Spintax">
+      <extends/>
+      <name>Parser</name>
+      <full_name>\ChillDev\Spintax\Parser</full_name>
+      <docblock line="15">
+        <description>Spintax parser.</description>
+        <long-description></long-description>
+        <tag line="15" name="author" description="Rafał Wrzeszcz &lt;rafal.wrzeszcz@wrzasq.pl&gt;"/>
+        <tag line="15" name="copyright" description="2014 © by Rafał Wrzeszcz - Wrzasq.pl."/>
+        <tag line="15" name="version" description="0.0.1"/>
+        <tag line="15" name="since" description="0.0.1"/>
+        <tag line="15" name="package" description="ChillDev\Spintax"/>
+      </docblock>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ChillDev\Spintax" line="34" package="ChillDev\Spintax">
+        <name>parse</name>
+        <full_name>parse</full_name>
+        <docblock line="26">
+          <description>Parses spintax article.</description>
+          <long-description></long-description>
+          <tag line="26" name="param" description="Source content." type="string" variable="$string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="26" name="return" description="Parsed spintax tree." type="\ChillDev\Spintax\Content">
+            <type by_reference="false">\ChillDev\Spintax\Content</type>
+          </tag>
+          <tag line="26" name="version" description="0.0.1"/>
+          <tag line="26" name="since" description="0.0.1"/>
+        </docblock>
+        <argument line="34">
+          <name>$string</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="ChillDev\Spintax" line="91" package="ChillDev\Spintax">
+        <name>replicate</name>
+        <full_name>replicate</full_name>
+        <docblock line="82">
+          <description>Reproduces article content for specified path.</description>
+          <long-description></long-description>
+          <tag line="82" name="param" description="Source content (or already parsed spintax tree)." type="string|\ChillDev\Spintax\Content" variable="$content">
+            <type by_reference="false">string</type>
+            <type by_reference="false">\ChillDev\Spintax\Content</type>
+          </tag>
+          <tag line="82" name="param" description="Path to use to generate the article." type="string|int[]" variable="$path">
+            <type by_reference="false">string</type>
+            <type by_reference="false">int[]</type>
+          </tag>
+          <tag line="82" name="return" description="Generated article content." type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="82" name="version" description="0.0.1"/>
+          <tag line="82" name="since" description="0.0.1"/>
+        </docblock>
+        <argument line="91">
+          <name>$content</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="91">
+          <name>$path</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <source>eJzVVd1q2zAUvvdTnEEgTkicdOyqbbJCB7sbox3soitFkZVYxJU0SW6atrnZ2+w1BnuvHdlS7PyyQW/mi9g5v9/5P3+vMhVFg243gi58ybiBKc8Z4FsRbUFOwWYMLjOe5x/YA1wrLix5hJxPNNHLBLWc4gUpbCY1XJEp+f0DvuonZp7oE5xrJOTJwv+/wA9ivicqH5daVKql5rPMwtvhyTv49RMmyx0bffdZaSWl1gPThksBw2SYnJQUwwVljf+K0DmZ1bC/edjIHESRIPfMoMgu/2ydiRAnJsEw/T+GSXNiDHwu8UfPEeBTxuaebkU3YHyYWGpOc5Z4dpBCD5rcg7Gaixm0/PtaFhpxUCksEzZZC2tmCy3gsqJXLtK1C6sZq2W3gvPUjQBL2qB8q2KSc4o4CMKEaSGodcplcWIPq1NKVoG6p6WltDACwRYBUtzBAgf+YABccMtJzp+YrzMImTJTm6CF1i6UUWXtrOag/DGGQc7NbYNs5ZwJR20/r17amzByKRVOmZbFLCunzecZ6XP3nmLHrbNY2tlw51CghproechFLzjs1BAWmZvrGPvUMHgzGlW6nUbGaqDguTfDRgzNjPTHhtmQVVNM0G3te9iDPn7nTMSVj05ny4oPEHF7VSfWg5NmfdxjFtzSDOIK1TZWnz7simpRuUrTTHLKdsQowaDbz+3THU5thM6hKt5emVDYm1ufHPxzdkzSifls7cqhR8EeEbVyjXwA7sthuFQzYnEEsaZp2bT7kdT9uzUFR3D3xyRN3UZJ46B/QGGCIOZbFfP4mEhdRVx52W4+q/BWh8O7lw/Mtf2C6PQ1I0MwnzDtzcAOQShE/297AkEQrcnyTkkVhz45nrMmabWJ4R9GuqG5dzDDZqw1/IpuLC1vo3EarpjSMi0ongd/FsKq95uIUT7luNkVsdnRi/ESTkErGNg8HRCjPZJjStJltYE3z0Un2W8WJXAMW84/Xhn8sRIKbCl8zZhg2o2G26NbV219ofz6+ehl0+04X/lMaaaQjI7ikIdeBX77ZGHblVkIONYMPoX4zTqJXKAHRIAD5hO8s8WD6MiDOT31t9Iz9jcR+p8UbqM4cJvOubkrezyugO84LGsxAvaoctxGcbvXDjHu9RT60MPpj0Pd4qbSKlpFfwCOHe/X</source>
+  </file>
+  <file path="Content.php" hash="025bebb8a44477e12ee87523c3c363c1" package="ChillDev\Spintax">
+    <docblock line="3">
+      <description>This file is part of the ChillDev Spintax library.</description>
+      <long-description></long-description>
+      <tag line="3" name="author" description="Rafał Wrzeszcz &lt;rafal.wrzeszcz@wrzasq.pl&gt;"/>
+      <tag line="3" name="copyright" description="2014 © by Rafał Wrzeszcz - Wrzasq.pl."/>
+      <tag line="3" name="version" description="0.0.1"/>
+      <tag line="3" name="since" description="0.0.1"/>
+      <tag line="3" name="package" description="ChillDev\Spintax"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="ChillDev\Spintax" line="26" package="ChillDev\Spintax">
+      <extends/>
+      <implements>\Countable</implements>
+      <name>Content</name>
+      <full_name>\ChillDev\Spintax\Content</full_name>
+      <docblock line="17">
+        <description>Spintax tree node.</description>
+        <long-description></long-description>
+        <tag line="17" name="author" description="Rafał Wrzeszcz &lt;rafal.wrzeszcz@wrzasq.pl&gt;"/>
+        <tag line="17" name="copyright" description="2014 © by Rafał Wrzeszcz - Wrzasq.pl."/>
+        <tag line="17" name="version" description="0.0.1"/>
+        <tag line="17" name="since" description="0.0.1"/>
+        <tag line="17" name="package" description="ChillDev\Spintax"/>
+      </docblock>
+      <property final="false" static="false" visibility="protected" line="35" namespace="ChillDev\Spintax" package="Default">
+        <name>$content</name>
+        <default></default>
+        <docblock line="28">
+          <description>Node raw value.</description>
+          <long-description></long-description>
+          <tag line="28" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="28" name="version" description="0.0.1"/>
+          <tag line="28" name="since" description="0.0.1"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="44" namespace="ChillDev\Spintax" package="Default">
+        <name>$children</name>
+        <default>array()</default>
+        <docblock line="37">
+          <description>Possible sub-contents.</description>
+          <long-description></long-description>
+          <tag line="37" name="var" description="" type="self[]">
+            <type by_reference="false">self[]</type>
+          </tag>
+          <tag line="37" name="version" description="0.0.1"/>
+          <tag line="37" name="since" description="0.0.1"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="protected" line="53" namespace="ChillDev\Spintax" package="Default">
+        <name>$next</name>
+        <default></default>
+        <docblock line="46">
+          <description>Next node value.</description>
+          <long-description></long-description>
+          <tag line="46" name="var" description="" type="self">
+            <type by_reference="false">self</type>
+          </tag>
+          <tag line="46" name="version" description="0.0.1"/>
+          <tag line="46" name="since" description="0.0.1"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ChillDev\Spintax" line="62" package="ChillDev\Spintax">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="55">
+          <description>Builds node representaiton for given string vlaue.</description>
+          <long-description></long-description>
+          <tag line="55" name="param" description="Text content." type="string" variable="$content">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="55" name="version" description="0.0.1"/>
+          <tag line="55" name="since" description="0.0.1"/>
+        </docblock>
+        <argument line="62">
+          <name>$content</name>
+          <default>''</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ChillDev\Spintax" line="75" package="ChillDev\Spintax">
+        <name>setContent</name>
+        <full_name>setContent</full_name>
+        <docblock line="67">
+          <description>Sets content value.</description>
+          <long-description></long-description>
+          <tag line="67" name="param" description="Text content." type="string" variable="$content">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="67" name="return" description="Self instance." type="self">
+            <type by_reference="false">self</type>
+          </tag>
+          <tag line="67" name="version" description="0.0.1"/>
+          <tag line="67" name="since" description="0.0.1"/>
+        </docblock>
+        <argument line="75">
+          <name>$content</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ChillDev\Spintax" line="90" package="ChillDev\Spintax">
+        <name>addChild</name>
+        <full_name>addChild</full_name>
+        <docblock line="82">
+          <description>Adds child node.</description>
+          <long-description></long-description>
+          <tag line="82" name="param" description="Sub-content." type="self" variable="$child">
+            <type by_reference="false">self</type>
+          </tag>
+          <tag line="82" name="return" description="Self instance." type="self">
+            <type by_reference="false">self</type>
+          </tag>
+          <tag line="82" name="version" description="0.0.1"/>
+          <tag line="82" name="since" description="0.0.1"/>
+        </docblock>
+        <argument line="90">
+          <name>$child</name>
+          <default></default>
+          <type>\ChillDev\Spintax\Content</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ChillDev\Spintax" line="105" package="ChillDev\Spintax">
+        <name>setNext</name>
+        <full_name>setNext</full_name>
+        <docblock line="97">
+          <description>Sets next node.</description>
+          <long-description></long-description>
+          <tag line="97" name="param" description="Next node." type="self" variable="$next">
+            <type by_reference="false">self</type>
+          </tag>
+          <tag line="97" name="return" description="Self instance." type="self">
+            <type by_reference="false">self</type>
+          </tag>
+          <tag line="97" name="version" description="0.0.1"/>
+          <tag line="97" name="since" description="0.0.1"/>
+        </docblock>
+        <argument line="105">
+          <name>$next</name>
+          <default></default>
+          <type>\ChillDev\Spintax\Content</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ChillDev\Spintax" line="121" package="ChillDev\Spintax">
+        <name>generate</name>
+        <full_name>generate</full_name>
+        <docblock line="112">
+          <description>Generates plain content (optionally based on pre-defined path).</description>
+          <long-description></long-description>
+          <tag line="112" name="param" description="&amp;$path Path to use for the content." type="int[]" variable="$path">
+            <type by_reference="false">int[]</type>
+          </tag>
+          <tag line="112" name="param" description="&amp;$index Internal pointer for path array." type="int" variable="$index">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="112" name="return" description="Generated content." type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="112" name="version" description="0.0.1"/>
+          <tag line="112" name="since" description="0.0.1"/>
+        </docblock>
+        <argument line="121">
+          <name>$path</name>
+          <default>array()</default>
+          <type>array</type>
+        </argument>
+        <argument line="121">
+          <name>$index</name>
+          <default>0</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ChillDev\Spintax" line="151" package="ChillDev\Spintax">
+        <name>dump</name>
+        <full_name>dump</full_name>
+        <docblock line="144">
+          <description>Dumps source spintax format.</description>
+          <long-description></long-description>
+          <tag line="144" name="return" description="Merged content." type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="144" name="version" description="0.0.1"/>
+          <tag line="144" name="since" description="0.0.1"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ChillDev\Spintax" line="179" package="ChillDev\Spintax">
+        <name>getPaths</name>
+        <full_name>getPaths</full_name>
+        <docblock line="172">
+          <description>Returns list of all possible paths.</description>
+          <long-description></long-description>
+          <tag line="172" name="return" description="List of all possible paths." type="array">
+            <type by_reference="false">array</type>
+          </tag>
+          <tag line="172" name="version" description="0.0.1"/>
+          <tag line="172" name="since" description="0.0.1"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ChillDev\Spintax" line="205" package="ChillDev\Spintax">
+        <name>count</name>
+        <full_name>count</full_name>
+        <docblock line="198">
+          <description>Returns number of possible combinations.</description>
+          <long-description></long-description>
+          <tag line="198" name="return" description="Number of possible combinations." type="int">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="198" name="version" description="0.0.1"/>
+          <tag line="198" name="since" description="0.0.1"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="ChillDev\Spintax" line="233" package="ChillDev\Spintax">
+        <name>__toString</name>
+        <full_name>__toString</full_name>
+        <docblock line="226">
+          <description>Returns plain representation.</description>
+          <long-description></long-description>
+          <tag line="226" name="return" description="Merged content." type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="226" name="version" description="0.0.1"/>
+          <tag line="226" name="since" description="0.0.1"/>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="82" code="50016">The type hint of the argument is incorrect for the type definition of the @param tag with argument $child in addChild()</error>
+      <error line="97" code="50016">The type hint of the argument is incorrect for the type definition of the @param tag with argument $next in setNext()</error>
+    </parse_markers>
+    <source>eJzVWNtu4zYQfddXTIGgtpPYSYq+ZZ2m7QJFgTZYbBbog2MEtETbRGRKJSknztYv/Zv9jQX6X50hqZslO1ekqB4ciZoZnjk8M6Ty7od0ngbB0f5+APvwaS40TEXMAf+mTBlIpmDmHH6eizh+z5dwmQpp2B3EYqKYWg3QixzPWWbmiYKPbMr++Rv+UPdc34f38E7hQDy49c/neMP0n4M0PrNeYZKulJjNDXx3fPI9fP0Ck1UjRp9undfAei250iKRcDw4HpzYES1kyCvPKQtv2KyEfeVh48ujIJBswTWaNN+fBkGmcTjJ8GkS89OCmTxvozgHmUT8/5h5GDOtMTtpuDQgFmnMF3iny4SDzwHgZZOmax8uMFdQ7BaWLM4oazucvz1fMgXaKCFn5VAdpB+tAbVjR/ZvqhLDQ8Mj2AsdMCR9A8OHRGuB6EBnk7630u1QeDwdjV8BCtIXKS5hCKNxE9AFvzNWBbtYQSgvByJxpub8P2UITzsEiqeKa2SECYMzTFGLM7FE6G5ZYBmzFoRY3GyRm+TMwyfKyz8Mngs+m8QihGkmQ0Ne19cYECfKQtMtJhpCp9Oz5k5wdO0Z7D79M82NV2hh3ju1RusGD5ccxZvHbF+KpySquMmUtCuHofFHIHCGab4WF225tbNQErVRFnR5nNZ0GzU/RigQK+O8XbXyQlk6tcNlWVxvSAmLIupVUTdvSw7NNlp8XY7Glhl6eiIvVjIyr9+dtFiri03Tt5EJTVtSQki2MGJBDmuN4rFU/MIlV8xw3OpjJmRRSN0kJRgsjlcwYRrbEGLCJtOP+FRIfEyZmfe2UIe7DS7Ot3tkAx/oxyRAmyo1JjpKNCRW+KGXkBG/g1/RQuH8kCaCbq2vDciUYqvmSrjqzvOJXruFzXzgrp0+T462hsMC8xCOGytUKeJaVVfW6egIUhHe+Eq1Lax4J6bQ/YYvUrPqbsi/16tMUw2jmIyShYtWM7CxhEZldS36kYM9bkSywKsWiP6KwnaPD5HXjFrXBhg8p5z4Fp1f69rTnhMU8VCNXHc5OHDD9dGCw8Gw0QN82HH/rFggG/8QXKQKpnWNcYopZIaazBRKUtUY9ySV1dWgqAUT2T0NRl6ghSQq7ys1+j5bpBp0kilUqvaHUCyHBTONAqxXw+9czV6/FCLE032m0MkXsKtgWfvzXHHMIr70c4TvNaD9Qa36ClniLJzDZgxgOt9k2rTvA1Z2mP6Zy3qnxCua6HzuwMAer3Hb6Hb+6hwWUXv4orPuvLUwN/E/XYcfrZnG7z5tPwpry2hXb5scXc/87UG/lzdpQ9uNbqiTuHucmDzi0WhckdIaeIzbV6Pf5kzYJA5hqrDv3s4FCs6qTpRcacNTXV8o61T9uMivnaK94SsYnu0Qb+nthVuSYgPYjbvFj64ru1DXmdRzMTVFC8M5N4RfT8LVCd02rdYbBdNGtotSlWbFtkWAMltM8ERAxBddJFlMhGS2wLapkI4XF49zfakQ3Sa5qUJUDB0Y+yFL6FONjlHMQMyZNtU+mtkuelJvnFQ09OlL/3x4Vpd8Zit0cA7wAOA3fme6qw/2+85rW4djsfbHQdfh8v3p6Z2OoO2X0CrGD/S57OEu587D5Zc1ret/st1eX5vk0k7QEFT1hF/v8OtgHfwLGqtuDQ==</source>
+  </file>
+  <package name="ChillDev" full_name="ChillDev">
+    <package name="Spintax" full_name="ChillDev\Spintax"/>
+  </package>
+  <package name="Default" full_name="Default"/>
+  <namespace name="ChillDev" full_name="ChillDev">
+    <namespace name="Spintax" full_name="ChillDev\Spintax"/>
+  </namespace>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>
