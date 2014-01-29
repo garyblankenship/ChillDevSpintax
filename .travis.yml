@@ -3,7 +3,7 @@
 #
 # @author Rafal Wrzeszcz <rafal.wrzeszcz@wrzasq.pl>
 # @copyright 2014 © by Rafal Wrzeszcz - Wrzasq.pl.
-# @version 0.0.1
+# @version 0.0.2
 # @since 0.0.1
 # @package ChillDev\Spintax
 ##
@@ -17,6 +17,7 @@ php:
     - "5.5"
 
 before_script:
+    - "composer self-update"
     - "composer --dev --no-progress --optimize-autoloader install"
 
 script: "make ci"
