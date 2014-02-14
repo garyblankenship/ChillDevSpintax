@@ -3,7 +3,7 @@
 #
 # @author Rafał Wrzeszcz <rafal.wrzeszcz@wrzasq.pl>
 # @copyright 2014 © by Rafał Wrzeszcz - Wrzasq.pl.
-# @version 0.0.1
+# @version 0.0.2
 # @since 0.0.1
 # @package ChillDev\Spintax
 -->
@@ -23,4 +23,4 @@
 -   [Travis CI](https://travis-ci.org/chilloutdevelopment/ChillDevSpintax)
 -   [Scrutinizer CI](https://scrutinizer-ci.com/g/chilloutdevelopment/ChillDevSpintax/)
 -   [Coverage tracking](https://coveralls.io/r/chilloutdevelopment/ChillDevSpintax)
--   [Dependencies tracking](https://www.versioneye.com/user/projects/52e1a8a1ec13751a000001a5)
+-   [Dependencies tracking](https://www.versioneye.com/php/chilldev:spintax)

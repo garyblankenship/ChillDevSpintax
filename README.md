@@ -3,7 +3,7 @@
 #
 # @author Rafał Wrzeszcz <rafal.wrzeszcz@wrzasq.pl>
 # @copyright 2014 © by Rafał Wrzeszcz - Wrzasq.pl.
-# @version 0.0.1
+# @version 0.0.2
 # @since 0.0.1
 # @package ChillDev\Spintax
 -->
@@ -15,7 +15,7 @@
 [![Build Status](https://travis-ci.org/chilloutdevelopment/ChillDevSpintax.png)](https://travis-ci.org/chilloutdevelopment/ChillDevSpintax)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/chilloutdevelopment/ChillDevSpintax/badges/quality-score.png?s=2db247278a9b22e9d22e14f94a5d5fc4dc826f00)](https://scrutinizer-ci.com/g/chilloutdevelopment/ChillDevSpintax/)
 [![Coverage Status](https://coveralls.io/repos/chilloutdevelopment/ChillDevSpintax/badge.png?branch=develop)](https://coveralls.io/r/chilloutdevelopment/ChillDevSpintax)
-[![Dependency Status](https://www.versioneye.com/user/projects/52e1a8a1ec13751a000001a5/badge.png)](https://www.versioneye.com/user/projects/52e1a8a1ec13751a000001a5)
+[![Dependency Status](https://www.versioneye.com/php/chilldev:spintax/badge.png)](https://www.versioneye.com/php/chilldev:spintax)
 
 # Installation
 
@@ -104,12 +104,13 @@ For more advanced aspects see [advanced usage documentation](https://github.com/
 -   [Packagist package](https://packagist.org/packages/chilldev/spintax)
 -   [Chillout Development @ GitHub](https://github.com/chilloutdevelopment)
 -   [Chillout Development @ Facebook](http://www.facebook.com/chilldev)
+-   [Post on Wrzasq.pl](http://wrzasq.pl/blog/chilldevspintax-library-objective-php-library-for-spintax-texts.html)
 
 # Contributing
 
 Do you want to help improving this project? Simply *fork* it and post a pull request. You can do everything on your own, you don't need to ask if you can, just do all the awesome things you want!
 
-This project is published under [MIT license](https://github.com/chilloutdevelopment/ChillDevSpintax/LICENSE).
+This project is published under [MIT license](https://github.com/chilloutdevelopment/ChillDevSpintax/tree/master/LICENSE).
 
 # Authors
 

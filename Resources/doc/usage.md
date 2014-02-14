@@ -3,7 +3,7 @@
 #
 # @author Rafał Wrzeszcz <rafal.wrzeszcz@wrzasq.pl>
 # @copyright 2014 © by Rafał Wrzeszcz - Wrzasq.pl.
-# @version 0.0.1
+# @version 0.0.2
 # @since 0.0.1
 # @package ChillDev\Spintax
 -->
@@ -53,7 +53,7 @@ I
 
 So for example _I love PHP_ is path `[0, 0]`, _I love JavaScript_ is `[0, 4]`, _I hate Ruby_ is `[1]`.
 
-Note that path length can differ depending on steps you tak (on some paths there can be more levels then on anothers).
+Note that path length can differ depending on steps you tak (on some paths there can be more levels than on anothers).
 
 You can use path as an argument for `Content::generate()` (this argument needs to be passed by reference, so you need to use variable for that):
 
