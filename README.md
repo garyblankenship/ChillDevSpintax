@@ -16,6 +16,7 @@
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/chilloutdevelopment/ChillDevSpintax/badges/quality-score.png?s=2db247278a9b22e9d22e14f94a5d5fc4dc826f00)](https://scrutinizer-ci.com/g/chilloutdevelopment/ChillDevSpintax/)
 [![Coverage Status](https://coveralls.io/repos/chilloutdevelopment/ChillDevSpintax/badge.png?branch=develop)](https://coveralls.io/r/chilloutdevelopment/ChillDevSpintax)
 [![Dependency Status](https://www.versioneye.com/php/chilldev:spintax/badge.png)](https://www.versioneye.com/php/chilldev:spintax)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/b0824944-2990-4d9d-ad7d-7f192fbc8810/mini.png)](https://insight.sensiolabs.com/projects/b0824944-2990-4d9d-ad7d-7f192fbc8810)
 
 # Installation
 

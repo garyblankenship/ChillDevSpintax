@@ -24,3 +24,4 @@
 -   [Scrutinizer CI](https://scrutinizer-ci.com/g/chilloutdevelopment/ChillDevSpintax/)
 -   [Coverage tracking](https://coveralls.io/r/chilloutdevelopment/ChillDevSpintax)
 -   [Dependencies tracking](https://www.versioneye.com/php/chilldev:spintax)
+-   [SensioLabs Insight](https://insight.sensiolabs.com/projects/b0824944-2990-4d9d-ad7d-7f192fbc8810)
